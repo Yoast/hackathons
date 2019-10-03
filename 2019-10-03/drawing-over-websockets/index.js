@@ -6,8 +6,9 @@ app.use( express.static( 'public' ) );
 
 app.get('/', ( request, response ) => {
 	response.send( 'Hello' );
-} )
+} );
 
+// Handle 404
 app.use(function(req, res) {
 	res.send('404: Not Found', 404);
 
