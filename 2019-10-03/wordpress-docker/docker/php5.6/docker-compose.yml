@@ -1,0 +1,43 @@
+version: '3.5'
+
+services:
+  web:
+    image: nginx:latest
+    volumes:
+      - "${PWD}/../../wordpress/latest/wordpress:/var/www/html:cached"
+      - "${PWD}/../../config/nginx/nginx.conf:/etc/nginx/conf.d/site.conf:cached"
+    ports:
+      - "80:80"
+    depends_on:
+      - php
+    networks:
+      - webnet
+
+  db:
+    image: mysql:5.7
+    ports:
+      - 18765:3306
+    volumes:
+      - "${PWD}/../../config/wordpress/wp-latest-seed-single.sql:/docker-entrypoint-initdb.d/wp-seed.sql"
+      - "${PWD}/../../wordpress/latest/db_single:/var/lib/mysql"
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: somewordpress
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+    networks:
+      - webnet
+
+  php:
+    build: '${PWD}/../../containers/php5.6'
+    volumes:
+      - "${PWD}/../../wordpress/latest/wordpress:/var/www/html:cached"
+      - "${PWD}/../../config/php/php.ini:/usr/local/etc/php/php.ini:cached"
+      - "${PWD}/../../config/wordpress/wp-config-latest.php:/var/www/html/wp-config.php:cached"
+    networks:
+      - webnet
+
+networks:
+  webnet:
+    external: false
