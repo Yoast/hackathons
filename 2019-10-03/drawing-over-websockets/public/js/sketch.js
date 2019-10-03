@@ -1,9 +1,10 @@
-let socket = new WebSocket( 'wss://localhost:8081' );
+let socket = new WebSocket( 'ws://localhost:8082' );
 
 function setup() {
 	const canvas = createCanvas(800, 600);
 	canvas.position(600,100);
 	canvas.background('#fff');
+	strokeWeight(8);
 
 	socket.addEventListener( 'open', function( event ) {
 		socket.send( 'Hey there, server!' );
@@ -11,19 +12,13 @@ function setup() {
 
 	socket.addEventListener( 'message', function( event ) {
 		// event.data contains the new point!
-
-
-		const data = event.data;
-
-		//	line(data.x, data.y, data.px, data.py);
-
-
+		const drawingData = JSON.parse( event.data );
+		line(drawingData.data.x, drawingData.data.y, drawingData.data.px, drawingData.data.py);
 	} );
 }
 
 function mouseDragged() {
 	stroke('#000000');
-	strokeWeight(4);
 	line(mouseX, mouseY, pmouseX, pmouseY);
 	sendmouse(mouseX, mouseY, pmouseX, pmouseY);
 }
@@ -38,7 +33,7 @@ function sendmouse(x, y, pX, pY) {
 			py: pY,
 			color: '#00000'
 		}
-	}
+	};
 
 	socket.send( JSON.stringify( data ) );
 }
