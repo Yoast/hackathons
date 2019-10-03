@@ -5,7 +5,7 @@
   "author": "First Last <first.last@example.com>",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "docker build -t bl/node-web-app . && docker run -p 49160:8080 bl/node-web-app"
   },
   "dependencies": {
     "express": "^4.16.1"
