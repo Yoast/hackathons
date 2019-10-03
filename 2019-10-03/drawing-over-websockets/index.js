@@ -1,23 +1,21 @@
-const http = require( 'http' );
-const port = 8081;
+const express = require( 'express' );
 
-const requestHandler = ( request, response ) => {
-	console.log( request.url );
+const app = express();
 
-	switch( request.url ) {
-		default:
-			response.end( 'Welcome!' );
-			break;
-	}
+app.use( express.static( 'public' ) );
 
-};
+app.get('/', ( request, response ) => {
+	response.send( 'Hello' );
+} )
 
-const server = http.createServer(requestHandler);
+app.use(function(req, res) {
+	res.send('404: Not Found', 404);
 
-server.listen( port, ( err ) => {
-	if ( err ) {
-		return console.log( 'Uh-oh...', err );
-	}
+});
 
-	console.log( `Server is running on ${port}` );
-} );
+// Handle 500
+app.use(function(error, req, res, next) {
+	res.send('500: Internal Server Error', 500);
+});
+
+app.listen( 8081 );
