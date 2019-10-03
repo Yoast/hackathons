@@ -14,6 +14,8 @@ Create a branch and matching directory structure for the project you are working
 For example; the hackathon of october 3rd:
 
 Branch: `2019-10-03/my-teams-awesome-goal`
+
 Directory: `2019-10-03/my-teams-awesome-goal`
+
 
 At least commit the things you have at the end of the day.
