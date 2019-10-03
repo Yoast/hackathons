@@ -9,6 +9,7 @@
     "startFirst": "docker build -t bl/node-web-app . && docker run --name nodejs-slack-integration -p 49160:8080 bl/node-web-app"
   },
   "dependencies": {
+    "@slack/web-api": "^5.2.0",
     "express": "^4.16.1"
   }
 }
