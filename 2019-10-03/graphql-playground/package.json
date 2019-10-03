@@ -20,7 +20,7 @@
     "start": "ts-node .",
     "start:dev": "nodemon",
     "build": "tsc",
-    "docker-run": "docker run diedex/graphrobber",
+    "docker-run": "docker run -p 3001:3001 diedex/graphrobber",
     "docker-build": "docker build -t diedex/graphrobber .",
     "docker": "yarn run docker-build && yarn run docker-run"
   },
