@@ -2,9 +2,9 @@
 FROM node:11
 
 # Set the working directory to /app
-WORKDIR ./in-out-board-nest-js/
+WORKDIR ./
 
-ENV PATH /in-out-board-nest-js/node_modules/.bin:$PATH
+ENV PATH /node_modules/.bin:$PATH
 
 # Install app dependencies
 COPY package.json ./
