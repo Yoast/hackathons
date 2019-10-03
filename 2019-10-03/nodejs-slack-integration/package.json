@@ -6,7 +6,7 @@
   "main": "server.js",
   "scripts": {
     "start": "docker container stop nodejs-slack-integration && docker rm nodejs-slack-integration && docker build -t bl/node-web-app . && docker run --name nodejs-slack-integration -p 49160:8080 bl/node-web-app",
-    "start:dev": "node ."
+    "startFirst": "docker build -t bl/node-web-app . && docker run --name nodejs-slack-integration -p 49160:8080 bl/node-web-app"
   },
   "dependencies": {
     "express": "^4.16.1"
