@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "description": "Node.js on Docker",
   "author": "First Last <first.last@example.com>",
-  "main": "server.js",
+  "main": "slack-integration.js",
   "scripts": {
-    "start": "docker container stop nodejs-slack-integration && docker rm nodejs-slack-integration && docker build -t bl/node-web-app . && docker run --name nodejs-slack-integration -p 49160:8080 bl/node-web-app",
+    "start": "docker container stop nodejs-slack-integration && docker rm nodejs-slack-integration && docker build -t bl/node-web-app . && docker run --name nodejs-slack-integration -p 4390:8080 bl/node-web-app",
     "startFirst": "docker build -t bl/node-web-app . && docker run --name nodejs-slack-integration -p 49160:8080 bl/node-web-app"
   },
   "dependencies": {
     "@slack/web-api": "^5.2.0",
-    "express": "^4.16.1"
+    "express": "^4.16.1",
+    "request": "^2.88.0"
   }
 }
