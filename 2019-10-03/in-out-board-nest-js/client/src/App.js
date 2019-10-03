@@ -2,24 +2,27 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+function bla() {
+	const Http = new XMLHttpRequest();
+	const url='http://localhost:3000/person';
+	let persons;
+
+	Http.onreadystatechange = () => {
+		if(Http.readyState===4 && Http.status===200) {
+			persons = ( JSON.parse( Http.responseText) );
+			document.getElementById("textbox").innerHTML = Http.responseText;
+		}
+	};
+	Http.open( "GET", url);
+	Http.send();
+}
+
+
 function App() {
+	bla();
   return (
     <div className="App">
-	    <div><p>hallo manuel</p></div>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/d</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+	    <div id="textbox"><p>hallo manuel</p></div>
     </div>
   );
 }
