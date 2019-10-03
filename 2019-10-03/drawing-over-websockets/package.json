@@ -1,0 +1,14 @@
+{
+  "name": "drawing-over-websockets",
+  "version": "1.0.0",
+  "description": "Lets you draw over Websockets",
+  "main": "index.js",
+  "author": "Team Yoast",
+  "license": "GPL-2.0-or-later",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "nodemon": "^1.19.3"
+  }
+}

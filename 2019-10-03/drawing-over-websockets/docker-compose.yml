@@ -1,0 +1,16 @@
+version: "3"
+services:
+  node:
+    image: "node:alpine"
+    user: "node"
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./:/home/node/app
+    expose:
+      - "3000"
+      - "8081"
+    ports:
+      - "8081:8081"
+    command: "yarn start"
