@@ -18,7 +18,7 @@
   },
   "scripts": {
     "start": "ts-node .",
-    "start:dev": "ts-node .",
+    "start:dev": "nodemon",
     "build": "tsc",
     "docker-run": "docker run diedex/graphrobber",
     "docker-build": "docker build -t diedex/graphrobber .",
