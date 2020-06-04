@@ -1,0 +1,25 @@
+{
+  "name": "aida-maarten",
+  "version": "1.0.0",
+  "description": "Hello our first plugin",
+  "main": "app.js",
+  "repository": "git@github.com:Yoast/hackathons.git",
+  "author": "Maarten Leenders <maarten@yoast.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "@yoast/components": "^2.2.0",
+    "babel-loader": "^8.1.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "webpack": "^4.43.0"
+  },
+  "devDependencies": {
+    "css-loader": "^3.5.3",
+    "svg-react-loader": "^0.4.6",
+    "webpack-cli": "^3.3.11"
+  }
+}
