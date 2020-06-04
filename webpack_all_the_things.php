@@ -22,12 +22,17 @@
       echo "<br>";
       echo "We are loading the following JS file: ". $dir . 'dist/main.js';
       echo "<br>";
-      echo "Look at the console.log for proof of live :)";
+      echo "<div id=js_output>";
+      echo "</div>";
       echo "<br>";
-      echo "Look at the Webpack build file loading! :)";
-      echo "<br>";
-      wp_enqueue_script( 'js-init-file', $dir . 'dist/main.js');
 
-      
+      echo '
+      <form id="form">
+         <label for="word">Word to spell-check:</label><br>
+         <input type="text" id="word" name="word" value=""><br>
+         <input type="submit" value="Submit">
+      </form> ';
+ 
+      wp_enqueue_script( 'js-init-file', $dir . 'dist/main.js');
    }
 ?>

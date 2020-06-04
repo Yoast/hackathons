@@ -22,6 +22,7 @@
     "webpack-cli": "^3.3.11"
   },
   "dependencies": {
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.15",
+    "typo-js": "^1.1.0"
   }
 }
