@@ -184,7 +184,7 @@ eval("/**\n * Test frontend component.\n *\n * src/front/components/front-test.j
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/style.css */ \"./src/css/style.css\");\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_style_css__WEBPACK_IMPORTED_MODULE_0__);\n/**\n * Frontend entry point.\n *\n * src/front/front-index.js\n */\nvar front = __webpack_require__(/*! ./components/front-test */ \"./src/front/components/front-test.js\"); //front.log( 'Here is a message for the frontend!' );\n// Let's test a function using Lodash.\n//front.log( front.getLastArrayElement( [ 1, 2, 3 ] ) ); // Should log out 3.\n\n\n\n\n//# sourceURL=webpack:///./src/front/front-index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/style.css */ \"./src/css/style.css\");\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_style_css__WEBPACK_IMPORTED_MODULE_0__);\n/**\n * Frontend entry point.\n *\n * src/front/front-index.js\n */\nvar front = __webpack_require__(/*! ./components/front-test */ \"./src/front/components/front-test.js\");\n\nfront.log('Yeah, were using webpack!');\n\n\n//# sourceURL=webpack:///./src/front/front-index.js?");
 
 /***/ }),
 
