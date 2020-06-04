@@ -12,7 +12,7 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 add_action( 'admin_footer' , 'enqueue_scripts');
 
 function enqueue_scripts () {
-	wp_enqueue_script( 'ei-to-ij', plugin_dir_url( 'ei-to-ij/ei-to-ij.php' ) . 'dist/ei-to-ij.min.js', [ 'lodash', 'wp-element', 'yoast-components' ] );
+	wp_enqueue_script( 'ei-to-ij', plugin_dir_url( 'ei-to-ij/ei-to-ij.php' ) . 'dist/ei-to-ij.min.js', [ 'lodash', 'wp-element', 'wp-i18n', 'yoast-seo-components' ] );
 }
 
 

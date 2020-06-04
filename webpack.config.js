@@ -9,8 +9,9 @@ module.exports = {
 	},
 	externals: {
 		lodash : 'lodash',
+		"@wordpress/i18n": 'window.wp.i18n',
 		"@wordpress/element": 'window.wp.element',
-		"yoast-components": "yoast-components",
+		"yoast-components": "window.wp.components",
 	},
 	module: {
 		rules: [
