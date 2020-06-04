@@ -1,11 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import kirbyDance from "kirby-dance";
 
 import { Input, Label, Button } from "@yoast/components";
 
 import "./style.css";
 
-console.log( "Webpack werkt!!!" );
+console.log( kirbyDance( 11 ) );
 
 function render() {
 	return (

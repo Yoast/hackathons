@@ -2538,6 +2538,11 @@ kind-of@^6.0.0, kind-of@^6.0.2:
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-6.0.3.tgz#07c05034a6c349fa06e24fa35aa76db4580ce4dd"
   integrity sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==
 
+kirby-dance@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/kirby-dance/-/kirby-dance-0.1.0.tgz#9902702c22a613752260bcfee693351dbc028409"
+  integrity sha1-mQJwLCKmE3UiYLz+5pM1HbwChAk=
+
 lcid@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/lcid/-/lcid-2.0.0.tgz#6ef5d2df60e52f82eb228a4c373e8d1f397253cf"
