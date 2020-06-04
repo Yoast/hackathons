@@ -33,6 +33,10 @@ const config = {
 				loader: 'babel-loader'
 			}
 		]
+	},
+
+	externals: {
+		lodash: "window.lodash"
 	}
 };
 

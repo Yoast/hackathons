@@ -23,7 +23,7 @@ function frontend_scripts() {
 	wp_enqueue_script(
 		'wds-wwe-frontend-js',
 		plugins_url( 'assets/js/frontend.js', __FILE__ ),
-		[ 'jquery' ],
+		[ 'jquery', 'lodash' ],
 		'11272018'
 	);
 }
