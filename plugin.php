@@ -31,4 +31,15 @@ function admin_scripts() {
 }
 add_action( 'admin_enqueue_scripts', 'admin_scripts' );
 
+
+
+function add_menu_info(){
+	add_menu_page('Info', 'Info', 'manage_options', 'Info', 'entryFun');
+}
+add_action('admin_menu', 'add_menu_info');
+
+function  entryFun(){
+	include(plugin_dir_path( __FILE__ ).'src/admin/adminpage.php');
+}
+
 ?>

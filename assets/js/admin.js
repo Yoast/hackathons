@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("/**\n * Admin entry point.\n *\n * src/admin/admin-index.js\n */\nvar admin = __webpack_require__(/*! ./components/admin-test */ \"./src/admin/components/admin-test.js\"); // Lets test!\n\n\nadmin.log('This is a message to the admin!!!!');\n\n//# sourceURL=webpack:///./src/admin/admin-index.js?");
+eval("/**\n * Admin entry point.\n *\n * src/admin/admin-index.js\n */\nvar admin = __webpack_require__(/*! ./components/admin-test */ \"./src/admin/components/admin-test.js\"); // Lets test!\n\n\nadmin.log('This is a message to the admin!!!!');\nconsole.log('Hoi');\n\n//# sourceURL=webpack:///./src/admin/admin-index.js?");
 
 /***/ }),
 
