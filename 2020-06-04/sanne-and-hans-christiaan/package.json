@@ -1,0 +1,9 @@
+{
+  "name": "awesome-wp-plugin",
+  "version": "0.1.0",
+  "description": "An awesome WordPress plugin to get to know Webpack.",
+  "main": "index.js",
+  "author": "Sanne and Hans-Christiaan",
+  "license": "MIT",
+  "private": true
+}
