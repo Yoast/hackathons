@@ -11,12 +11,14 @@ Text Domain: hackathon-sanne-hans-christiaan
 */
 
 function show_admin_page() {
+	wp_enqueue_style( 'yoast-seo-admin-css' );
 	wp_enqueue_script(
 		'hackathon',
 		plugins_url() . '/hackathon/assets/build/js/hackathon.js',
 		[ 'lodash', 'wp-data', 'wp-i18n', 'yoast-seo-components', 'yoast-seo-jed' ]
 	);
-	echo '<h1>Hello world!</h1>';
+	echo '<h1>Yoast SEO - Customer satisfaction survey</h1>';
+	echo '<div id="app"></div>';
 }
 
 function register_admin_page() {

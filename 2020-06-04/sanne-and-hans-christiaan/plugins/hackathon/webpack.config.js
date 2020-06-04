@@ -6,9 +6,25 @@ module.exports = {
 		path: path.resolve( __dirname, "assets/build/js" ),
 		filename: "hackathon.js"
 	},
+	module: {
+		rules: [
+			{
+				test: /\.(js|jsx)$/,
+				exclude: /node_modules/,
+				use: [ "babel-loader" ]
+			},
+			{
+				test: /\.css$/,
+				use: [ "style-loader", "css-loader" ]
+			}
+		]
+	},
 	externals: {
+		"@yoast/components": "window.yoast.componentsNew",
 		"@wordpress/data": "window.wp.data",
 		lodash: "window.lodash",
 		"@wordpress/i18n": "window.wp.i18n",
+		react: "window.React",
+		"react-dom": "window.ReactDOM"
 	}
 };
