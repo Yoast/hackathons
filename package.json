@@ -1,0 +1,33 @@
+{
+  "name": "test-plugin",
+  "version": "1.0.0",
+  "description": "At Yoast, we have a hackathon every 6 weeks. These are full working days in which the entire development organisation will be working on a specific focus.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yoast/hackathons.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yoast/hackathons/issues"
+  },
+  "homepage": "https://github.com/Yoast/hackathons#readme",
+  "devDependencies": {
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "@yoast/style-guide": "^0.11.2",
+    "babel-loader": "^8.1.0",
+    "webpack": "^4.43.0"
+  }
+}

@@ -22,6 +22,11 @@ function show_hi() {
 	);
 }
 
+function test_enqueue_script() {
+	wp_enqueue_script( 'app', plugin_dir_url( __FILE__ ) . 'dist/main.js', [ 'lodash' ], null, true );
+}
+add_action('admin_enqueue_scripts', 'test_enqueue_script');
+
 // Now we set that function up to execute when the admin_notices action is called.
 add_action( 'admin_notices', 'show_hi' );
 
