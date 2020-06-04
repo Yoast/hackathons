@@ -1,0 +1,38 @@
+{
+  "name": "2020-06-04-rolf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "scripts": {
+    "watch": "webpack --mode=development --watch --config webpack-config.js",
+    "build": "webpack --mode=production --config webpack-config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yoast/hackathons.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yoast/hackathons/issues"
+  },
+  "homepage": "https://github.com/Yoast/hackathons#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@wordpress/dependency-extraction-webpack-plugin": "^2.6.0",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.5.3",
+    "lodash": "^4.17.15",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
