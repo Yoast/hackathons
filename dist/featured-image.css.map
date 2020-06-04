@@ -1,0 +1,1 @@
+{"version":3,"sources":["featured-image.css"],"names":[],"mappings":"AAAA,6BACE,YACF,CAEA,sDACE,2CACF","file":"featured-image.css","sourceRoot":"../css/src","sourcesContent":["#yst_opengraph_image_warning {\n  margin-top: 0;\n}\n\n.yoast-opengraph-image-notice #set-post-thumbnail > img {\n  box-shadow: 0 0 0 2px #fff, 0 0 0 5px #dc3232;\n}\n\n"]}

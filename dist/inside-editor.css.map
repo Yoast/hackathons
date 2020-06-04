@@ -1,0 +1,1 @@
+{"version":3,"sources":["inside-editor.css"],"names":[],"mappings":"AAAA,iBACE,wBACF,CAEA,4BACE,wBAAyB,CACzB,UACF","file":"inside-editor.css","sourceRoot":"../css/src","sourcesContent":[".yoast-text-mark {\n  background-color: #e1bee7;\n}\n\n.yoast-text-mark__highlight {\n  background-color: #4a148c;\n  color: white;\n}\n\n"]}

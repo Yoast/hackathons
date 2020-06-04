@@ -30,7 +30,8 @@
     "start": "webpack-dev-server --config ./webpack/webpack.config.js --progress --env.environment=development",
     "link-monorepo": "node scripts/link_monorepo_to_plugin.js",
     "unlink-monorepo": "node scripts/unlink_monorepo.js",
-    "bump-monorepo-packages": "node scripts/bump_monorepo_packages.js"
+    "bump-monorepo-packages": "node scripts/bump_monorepo_packages.js",
+    "dev": "parcel build css/src/*.css js/src/**.js --log-level 4"
   },
   "jest": {
     "setupTestFrameworkScriptFile": "<rootDir>/js/tests/setupTests.js",
@@ -90,6 +91,8 @@
     "jest-styled-components": "^6.3.1",
     "mini-css-extract-plugin": "^0.9.0",
     "node-fetch": "^2.6.0",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-externals": "^0.4.0",
     "raf": "^3.4.0",
     "react": "16.8.6",
     "react-dom": "16.8.6",

@@ -1,0 +1,1 @@
+{"version":3,"sources":["filter-explanation.css"],"names":[],"mappings":"AAAA,wCACE,mBAAoB,CACpB,UACF","file":"filter-explanation.css","sourceRoot":"../css/src","sourcesContent":["#posts-filter .wpseo-filter-explanation {\n  margin: 10px 1px 5px;\n  clear: both;\n}\n\n"]}
