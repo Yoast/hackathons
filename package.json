@@ -1,0 +1,22 @@
+{
+  "name": "happy-hackaton",
+  "version": "1.0.0",
+  "description": "Happy Hackaton",
+  "main": "index.js",
+  "repository": "git@github.com:Yoast/hackathons.git",
+  "author": "<info@joseewouters.nl>",
+  "license": "MIT",
+
+  "dependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "babel-loader": "^8.1.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+
+  "scripts": {
+    "build": "webpack --mode=production",
+    "watch": "webpack --watch --mode=development"
+  }
+}
