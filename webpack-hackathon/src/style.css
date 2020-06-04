@@ -1,0 +1,8 @@
+#blablaroot {
+	width: 1000px;
+	height: fit-content;
+}
+
+#blablaroot svg {
+	max-height: 4em;
+}
