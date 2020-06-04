@@ -1,0 +1,16 @@
+/vendor/
+.idea/
+node_modules
+.DS_Store
+/docker/data/mysql/
+/docker/data/logs/*
+!/docker/data/logs/.gitkeep
+/docker/config/development.php
+/docker/config/nginx_wordpress_site.conf
+/docker/config/dotenv
+/docker/config/php.ini
+.vscode/
+site/web/app/logs/
+docker/config/
+.bash_history
+.php_history
