@@ -10,10 +10,15 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 */
 
 add_action( 'admin_footer' , 'enqueue_scripts');
+//add_action( 'admin_enqueue_scripts' , 'enqueue_styles');
 
 function enqueue_scripts () {
 	wp_enqueue_script( 'ei-to-ij', plugin_dir_url( 'ei-to-ij/ei-to-ij.php' ) . 'dist/ei-to-ij.min.js', [ 'lodash', 'wp-element', 'wp-i18n', 'yoast-seo-components' ] );
 }
+
+//function enqueue_styles () {
+//	wp_enqueue_style( 'ei-to-ij', plugin_dir_url( 'ei-to-ij/ei-to-ij.php' ) . 'css/all.css' );
+//}
 
 
 add_action( 'admin_menu', 'register_admin_page' );

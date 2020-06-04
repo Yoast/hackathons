@@ -1,5 +1,5 @@
 const path = require('path');
-
+//import {combineLoaders} from 'webpack-combine-loaders';
 module.exports = {
 	mode: 'production',
 	entry: path.resolve(__dirname, 'src') + '/index.js',
@@ -21,6 +21,15 @@ module.exports = {
 				use: {
 					loader: "babel-loader"
 				}
+			},
+			{
+				test: /\.css$/,
+				use: [
+					{ loader: 'style-loader' },
+					{
+						loader: 'css-loader',
+					},
+				]
 			}
 		]
 	}
