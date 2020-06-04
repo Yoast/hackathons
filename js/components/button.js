@@ -1,6 +1,8 @@
-import Button from "@yoast/components";
+import { Button } from "@yoast/components";
 import React from "react";
 
-const PrimaryButton = <Button />;
+const PrimaryButton = ( props ) => {
+	return <Button { ...props } />;
+};
 
 export default PrimaryButton;

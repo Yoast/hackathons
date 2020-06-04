@@ -2,7 +2,7 @@ const path = require('path');
 
 const externals = {
 	lodash: "window.lodash",
-	"@yoast/components": "window.yoast.compnentsNew"
+	"@yoast/components": "window.yoast.componentsNew"
 };
 
 module.exports = {
