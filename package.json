@@ -1,0 +1,27 @@
+{
+  "name": "hackathon_4_6_2020",
+  "version": "1.0.0",
+  "description": "At Yoast, we have a hackathon every 6 weeks. These are full working days in which the entire development organisation will be working on a specific focus.",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yoast/hackathons.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yoast/hackathons/issues"
+  },
+  "homepage": "https://github.com/Yoast/hackathons#readme",
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15"
+  }
+}

@@ -20,8 +20,14 @@
       $dir = plugin_dir_url( __FILE__ );
       echo "Hello. We are going to load some Javascript here.";
       echo "<br>";
-      echo "We are loading the following JS file: ". $dir . 'js/init.js';
+      echo "We are loading the following JS file: ". $dir . 'dist/main.js';
       echo "<br>";
-      wp_enqueue_script( 'js-init-file', $dir . 'js/init.js');
+      echo "Look at the console.log for proof of live :)";
+      echo "<br>";
+      echo "Look at the Webpack build file loading! :)";
+      echo "<br>";
+      wp_enqueue_script( 'js-init-file', $dir . 'dist/main.js');
+
+      
    }
 ?>

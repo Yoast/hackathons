@@ -1,1 +1,0 @@
-console.log("Hello, Javascript here. I am being loaded ");
